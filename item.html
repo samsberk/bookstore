@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Preview : BookStore</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karma|Muli|Yantramanav|Kalam|Pacifico|Quicksand|Sedgwick+Ave|Gloria+Hallelujah|Special+Elite|Finger+Paint" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/mycss.css">
+    </head>
+    <body>
+        <!-- ************************************************ Header box ************************************************ -->
+        <div class="jumbotron text-center" id="home">
+            <div class="top-menu">
+                <a href="cart.html" class="link"><i class="fa fa-shopping-cart"></i> Cart</a><sup><span class="badge">3</span></sup>
+            </div>
+            <h1><a href="index.html">BookStore</a></h1>
+            <p>India's <span style="color:#DE354C;font-family:inherit;">Largest</span> Book Store</p>
+        </div>
+
+        <!-- ************************************************ Nav Bar ************************************************ -->
+        <nav class="navbar navbar-default my-nav">
+            <a class="navbar-brand phone" href="index.html"><i class="fa fa-home"></i> BookStore</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-align-justify"></span> Navigation
+                </button>
+            </div>
+            <div class="collapse navbar-collapse my-collapse" id="myNavbar">
+                <ul class="nav navbar-nav my-navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exams.html">Exams</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="regional.html">Regional</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control txt-box" placeholder="Search Books">
+                    </div>
+                    <button type="submit" class="btn btn-default sub-btn">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- ************************************************ Book Preview ************************************************ -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h3>Book Preview</h3><hr class="heading"><br><br>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5"><br>
+                            <!-- **************** Item Image ******************** -->
+                            <div class="img-prev">
+                                <img src="assets/images/imgprev.jpeg">
+                            </div>
+                        </div>
+                        <div class="col-md-5"><br>
+                            <!-- **************** breadcrumb ******************** -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html" class="link">Home</a></li>
+                                <li><a href="exams.html" class="link">Exams</a></li>
+                                <li>Book</li>
+                            </ul>
+                            <!-- **************** Item name ******************** -->
+                            <h4>Fast Track Objective Arithmetic Code</h3>
+                            <h5>by Rajesh Verma (Author)<br>Arihant Publications India Pvt Ltd (Publisher)</h4>
+
+                                <!-- **************** Item Ratings ******************** -->
+                            <h4 style="color: red;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty"></i></h4>
+
+                            <!-- **************** Item price ******************** -->
+                            <h2 style="margin-bottom: 0;color: green;"><i class="fa fa-rupee"></i> 465/-</h2>
+                            <h6 style="margin-top: 0;">Inclusive of all taxes</h6>
+                            <br>
+
+                            <!-- **************** Item Quantity ******************** -->
+                            <label for="qty">Choose Quantity:</label>&emsp;
+                            <select name="num" id="qty">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <!-- **************** Item Description ******************** -->
+                            <h4>Product Description</h4>
+                            <h5 class="text-justify">
+                                Fast Track Objective Arithmetic Code: D250 Here comes the Best Seller! Since its first 
+                                edition in 2012, Fast Track Objective Arithmetic has been great architect for building 
+                                and enhancing Aptitude skills in lakhs of aspirant across the country.
+                            </h5>
+                            <ul>
+                                <li>ISBN-13 : 9789312149836</li>
+                                <li>Language : English</li>
+                                <li>Binding : Paper Back</li>
+                                <li>Publishing Year : 2018</li>
+                                <li>Publisher : Arihant Publications India Pvt Ltd</li>
+                            </ul>
+                            
+                            <br>
+
+                            <!-- **************** Add to cart ******************** -->
+                            <a href="cart.html" class="btn btn-warning btn-block"><i class="fa fa-cart-plus"></i> &ensp;Add to Cart</a>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div><br>
+        <!-- ************************************************ Footer box ************************************************ -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row text-left">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4">
+                        <h4>BookStore</h4><hr class="heading"><br>
+                        <p class="text-justify">
+                            We believe that <a href="index.html" class="link">BookStore</a> are essential to a healthy culture. They’re where authors can 
+                            connect with readers, where we discover new writers, where children get hooked on the thrill 
+                            of reading that can last a lifetime. They’re also anchors for our downtowns and communities.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Head Office</h4><hr class="heading"><br>
+                        <p class="text-justify">
+                            Tavarkere Side, 1st Floor, Oyo Workflo, Umiya Emporium,
+                            102, Hosur Main Road, Tavarekere, Opposite Forum Mall,<br>
+                            Bengaluru, Karnataka<br>
+                            560029
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Important Links</h4><hr class="heading"><br>
+                        <p>
+                            <a href="index.html" class="link">Home</a><br>
+                            <a href="exams.html" class="link">Exams</a><br>
+                            <a href="business.html" class="link">Business</a><br>
+                            <a href="academics.html" class="link">Academics</a><br>
+                            <a href="regional.html" class="link">Regional</a><br>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                Follow Us on<br><br>
+                <div class="social-icons">
+                    <a href="http://www.twitter.com/bookstore" target="_blank" class="link"><i class="fa fa-twitter"></i></a>
+                    <a href="http://www.linkedin.com/in/bookstore" target="_blank" class="link"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://www.instagram.com/bookstore" target="_blank" class="link"><i class="fa fa-instagram"></i></a>
+                    <a href="http://www.youtube.com/bookstore" target="_blank" class="link"><i class="fa fa-youtube"></i></a>
+                </div>
+                <hr>
+                <p>
+                    &copy; 2015 - 2021 BookStore.com<br>
+                    All rights reserved<br>
+                    Designed by : <a href="http://www.linkedin.com/in/samsberk" class="link">samsberk</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

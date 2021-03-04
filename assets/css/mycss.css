@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.phone, .desktop{
+    display: none;
+}
+.lbl{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.txt{
+    height: 35px;
+    width: 100%;
+    padding: 2px 10px;
+    border: none;
+    font-size: 14px;
+    margin-top: 15px;
+    border-bottom: 1px solid #a5a5a5;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.txt-box{
+    border-radius: 0;
+    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    color: #282828;
+}
+.sub-btn{
+    border: 1px solid #dddddd;
+    background-color: #dddddd;
+}
+.heading{
+    border-radius: 0px 5px 5px 0px;
+    background-color: #DE354C;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.about-box p{
+    font-size: 16px;
+    text-align: justify;
+    color: #282828;
+}
+p .link{
+    color: #DE354C;
+    text-decoration: none;
+}
+p .link:hover{
+    color: purple;
+}
+/* =============================== Mobile View ============================== */
+@media screen and (max-width: 768px){
+    .phone{
+        display: block;
+    }
+    .heading{
+        height: 3px;
+        width: 30%;
+    }
+    .jumbotron p{
+        font-size: 10px;
+    }
+
+    .top-menu{
+        top:5px;
+        right:15px;
+        font-size: 25px;
+    }
+    .top-menu a{
+        font-size: 16px;
+        padding: 2px 8px;
+        border-radius: 3px;
+    }
+    .top-menu .badge{
+        padding: 3px 5px;
+        margin-left: -8px;
+    }
+    .cat-box{
+        height: 80px;
+        width: 80px;
+        padding: 20px;
+    }
+}
+
+/* =============================== Desktop View ============================== */
+@media screen and (min-width: 768px){
+    .desktop{
+        display: block;    
+    }
+    .heading{
+        height: 5px;
+        width: 10%;
+    }
+
+    .jumbotron p{
+        font-size: 17px;
+    }
+
+    .top-menu{
+        top:15px;
+        right:25px;
+        font-size: 33px;
+    }
+    .top-menu a{
+        font-size: 25px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    .top-menu .badge{
+        padding: 5px 8px;
+        margin-left: -13px;
+    }
+    .cat-box{
+        height: 120px;
+        width: 120px;
+        padding: 30px;
+    }
+}
+
+
+/* =============================== Nav Bar CSS ============================== */
+.my-nav{
+    position: sticky;
+    top: 0;
+    padding: 2px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 5px;
+    background: white;
+    z-index: 9;
+}
+.my-nav .my-collapse{
+    border: none;
+    margin-top: 0;
+    text-align: center;
+}
+.my-nav .navbar-header .navbar-toggle{
+    background: #EEEEEE;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #282828;
+}
+.my-nav .my-collapse .my-navbar-nav li a{
+    font-size: 15px;
+    padding: 11px 15px;
+    margin: 3px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: #e4e4e4;
+    color: black;
+}
+
+.my-nav .my-collapse .my-navbar-nav li a:hover, .my-nav .my-collapse .my-navbar-nav li.active a{
+    color: white;
+    background-color: #DE354C;
+}
+
+/* =============================== Jumbotron CSS ============================== */
+.jumbotron{
+    color: #282828;
+    margin-bottom: 5px;
+    background: transparent;
+}
+.jumbotron a{
+    font-family: 'Finger Paint';
+}
+.jumbotron p{
+    line-height: 0;
+    /* font-family: 'Gloria Hallelujah'; */
+    font-family: 'Finger Paint';
+    color: #282828;
+}
+.link, .jumbotron a{
+    color: #282828;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.link:hover, .jumbotron a:hover{
+    color: #DE354C;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.top-menu{
+    position: absolute;
+}
+.top-menu a{
+    font-family: 'Yantramanav';
+    background: rgba(255, 255, 255, 0.8);
+}
+.top-menu sup span{
+    color: white ;
+    background-color: #DE354C;
+}
+
+.cat-box{
+    border: 0.5px solid #DE354C;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+.cat-box img{
+    width: 100%;
+}
+
+.book-box{
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 5px;
+}
+
+.book-box img{
+    width: 50%;
+}
+.book-box h5{
+    color: black;
+    margin: 5px 0px;
+}
+.book-box h6{
+    margin: 0;
+}
+.book-box h4{
+    color: green;
+    font-weight: bold;
+    font-family: karma;
+}
+.book-box a{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+.book-box a:nth-child(1):hover{
+    border-left: 3px solid #DE354C;
+    border-right: 3px solid #DE354C;
+}
+
+.btn-view{
+    border:1px solid #DE354C;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.footer{
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: lightgray;
+}
+.social-icons .link{
+    font-size: 20px;
+    padding: 3px 8px;
+    border: 0.5px solid #DE354C;
+    border-radius: 50%;
+    
+}
+.img-prev{
+    margin: 0px auto;
+    text-align: center;
+}
+.img-prev img{
+    width: 80%;
+}
